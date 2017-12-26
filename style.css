@@ -1,0 +1,94 @@
+body {
+    margin: 0px;
+}
+
+h1 {
+    /*color: green;*/
+}
+
+.backgroundImage {
+    background-size: cover;
+    background-image: url("http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2015/10/151027_BA_blue-sky.jpg.CROP.promo-xlarge2.jpg");
+    transition: background-image 0.2s ease-in-out
+}
+
+.container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    /*border: 1px solid gray;*/
+    display: flex;
+}
+
+.content {
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0.5em;
+    display: flex;
+    flex: 1;
+}
+
+.weatherImage {
+    background-image: url(https://images.vexels.com/media/users/3/145136/isolated/preview/94a70b169da2d2f32dc34ead9122ef2d-sun-sharp-rays-big-icon-by-vexels.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.menu {
+    position: fixed;
+    display: flex;
+    right: -271px;
+    top: -3;
+    height: 5em;
+    width: 15em;
+    border: 3px solid grey;
+    border-bottom-left-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s;
+    z-index: 10;
+}
+
+.menuButton {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    background-color: lightgray;
+}
+
+.menuButton:hover {
+    background-color: whitesmoke;
+}
+
+.icon {
+    font-size: 2.5em;
+}
+
+.line {
+    height: 80%;
+    width: 0px;
+    border: 1.5px solid grey;
+}
+
+.slider {
+    display: flex;
+    width: 300%;
+    position: relative;
+    transition: all 0.8s;
+    left: 0px;
+}
+
+.frame {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}

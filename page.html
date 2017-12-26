@@ -1,0 +1,84 @@
+<html>
+<header>
+    <!--<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">-->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.css' />
+    <script src='https://cdn.jsdelivr.net/npm/moment@2.20.1/moment.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.8.0/fullcalendar.min.js'></script>
+    
+</header>
+
+<body>
+    <div class="backgroundImage">
+        <div class="frame">
+            <div class="slider">
+                <div class="container" style="background-image: url('http://www.slate.com/content/dam/slate/blogs/bad_astronomy/2015/10/151027_BA_blue-sky.jpg.CROP.promo-xlarge2.jpg')">
+                    <div class="row" style="flex: 2">
+                        <div class="column" style="flex: 1">
+                            <div class="content">
+                                <h1 id="tempNow"></h1>
+                            </div>
+                        </div>
+                        <div class="column" style="display: flex; flex-direction: column; flex: 3">
+                            <div class="content">
+                                <div class="row" style="flex: 1"></div>
+                                <div class="row weatherImage" style="flex: 5"></div>
+                                <div class="row" style="flex: 1"></div>
+                            </div>
+                        </div>
+                        <div class="column" style="flex: 1"></div>
+                    </div>
+                    <div class="row" style="flex: 1">
+                        <div class="column" style="flex: 1"></div>
+                        <div class="column" style="flex: 1"></div>
+                        <div class="column" style="flex: 1"></div>
+                    </div>
+                </div>
+                <div class="container" style="background-image: url('https://stylewhack.com/wp-content/uploads/2017/10/2ccea54545beb98e0b7cb1c7547cd8a9.jpg')">
+                    <div class="row" style="flex: 2">
+                        <div class="column" style="flex: 1">
+                            <div class="content" style="justify-content: center; align-items: center;">
+                                <h1 style="font-size: 200%">FOOD HERE ...</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container" style="background-image: url('https://www.preventchildabuseny.org/files/7812/8682/8340/hdr_calendar.jpg')">
+                    <div class="row" style="flex: 2">
+                        <div class="column" style="flex: 1">
+                            <div class="content" style="justify-content: center; align-items: center; background-color: rgba(255, 255, 255, 0.9);">
+                                <div id='calendar'></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="menu">
+            <div class="row" style="flex: 1">
+                <div id="menuOpenButton" class="column menuButton" style="flex: 1; background-color: whitesmoke;">
+                    <div class="line" style="margin-right: 4px"></div>
+                    <div class="line"></div>
+                </div>
+                <div id="weather" class="column menuButton" style="flex: 3;">
+                    <i class="fa fa-sun-o icon" aria-hidden="true"></i>
+                </div>
+                <div id="food" class="column menuButton" style="flex: 3">
+                    <i class="fa fa-cutlery icon" aria-hidden="true"></i>
+                </div>
+                <div id="calendar" class="column menuButton" style="flex: 3">
+                    <i class="fa fa-calendar-o icon" aria-hidden="true"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
